@@ -9,7 +9,7 @@ on:
       - 'kernel/**'
       - 'userspace/ksud/**'
   pull_request:
-    branches: [ "main" ]
+    branches: ['*']
     paths:
       - 'manager/**'
   workflow_dispatch:
