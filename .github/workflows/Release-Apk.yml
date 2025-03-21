@@ -1,7 +1,5 @@
 name: Release Apk
 on:
-  push:
-    branches: ['*']
   workflow_dispatch:
 
 jobs:
@@ -31,6 +29,7 @@ jobs:
           done
 
 
+
       - name: Display structure of downloaded files
         run: ls -R
 
@@ -39,4 +38,6 @@ jobs:
         with:
           files: |
             manager/*.apk
+            android*-lkm/*_kernelsu.ko
+            boot-images-*/Image-*/*.img.gz
             ksud/ksud-*
