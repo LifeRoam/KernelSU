@@ -2,7 +2,7 @@ name: Build arrch64 Manager
 
 on:
   push:
-    branches: [ "**" ]
+    branches: ['*']
     paths:
       - '.github/workflows/build-manager.yml'
       - 'manager/**'
